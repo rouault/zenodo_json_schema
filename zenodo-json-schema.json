@@ -609,7 +609,8 @@
           },
           "orcid": {
             "description": "ORCID identifier for creator.",
-            "type": "string"
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$"
           }
         },
         "required": [
@@ -1082,7 +1083,7 @@
       "type": "string"
     }
   },
-  "required": [
+  "XXXrequired": [
     "recid",
     "resource_type",
     "publication_date",
@@ -1090,6 +1091,13 @@
     "creators",
     "description",
     "access_right"
+  ],
+  "required": [
+      "title",
+      "creators",
+      "description",
+      "license",
+      "keywords"
   ],
   "title": "Zenodo Record Schema v1.0.0",
   "type": "object"
