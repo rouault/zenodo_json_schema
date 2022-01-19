@@ -609,7 +609,8 @@
           },
           "orcid": {
             "description": "ORCID identifier for creator.",
-            "type": "string"
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9A-Z]$"
           }
         },
         "required": [
